@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Mokat Shop : demande de commande, contact rapide, WhatsApp, retrait et informations utiles."
+    />
+    <title>Mokat Shop | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body class="inner-page">
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-logo">Mokat Shop</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+
+    <div class="announcement-bar">
+      <div class="marquee">
+        <div class="marquee-group">
+          <span>Contact et commande Mokat Shop</span>
+          <span>WhatsApp, appel et retrait en magasin</span>
+          <span>Yopougon Maroc et Songon Campement Gouro</span>
+          <span>Reponse simple et rapide</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Contact et commande Mokat Shop</span>
+          <span>WhatsApp, appel et retrait en magasin</span>
+          <span>Yopougon Maroc et Songon Campement Gouro</span>
+          <span>Reponse simple et rapide</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-logo" data-reward>Mokat<span>Shop</span></a>
+          <div class="nav-actions">
+            <div class="nav-links">
+              <a href="index.html" data-reward>Accueil</a>
+              <a href="rayons.html" data-reward>Rayons</a>
+              <a href="promos.html" data-reward>Promos</a>
+              <a href="magasins.html" data-reward>Magasins</a>
+              <a href="contact.html" aria-current="page" data-reward>Contact</a>
+            </div>
+            <a href="#commande" class="nav-cta" data-reward>
+              Commander
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu" data-reward>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-reward>Accueil</a>
+        <a href="rayons.html" data-reward>Rayons</a>
+        <a href="promos.html" data-reward>Promos</a>
+        <a href="magasins.html" data-reward>Magasins</a>
+        <a href="contact.html" aria-current="page" data-reward>Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div class="hero-copy reveal-left">
+              <div class="page-badge">Contact et commande</div>
+              <h1>Parlez a Mokat Shop pour <span class="accent">commander ou demander</span></h1>
+              <p class="page-lead">
+                Une liste de courses, une demande de disponibilite ou une
+                commande a retirer : l'equipe Mokat Shop reste joignable
+                simplement selon le canal qui vous convient.
+              </p>
+              <div class="page-actions">
+                <a href="#commande" class="btn btn-primary" data-reward>
+                  Faire une demande
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="magasins.html" class="btn btn-outline" data-reward>Voir les magasins</a>
+              </div>
+              <div class="hero-kpis">
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="3" data-suffix="">0</strong>
+                  <span>canaux de contact</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="2" data-suffix="">0</strong>
+                  <span>magasins de retrait</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="1" data-suffix=" demande">0</strong>
+                  <span>pour lancer votre commande</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+              <div class="hero-stage">
+                <img
+                  src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Contact et commande"
+                  data-fallback="Contact Mokat"
+                  data-tone="orange"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="floating-panel card-a">
+                <span class="eyebrow">Simple</span>
+                <strong>Commander sans se compliquer</strong>
+                <p>Appel, WhatsApp ou retrait selon votre habitude.</p>
+              </div>
+              <div class="floating-panel card-b">
+                <span class="eyebrow">Canaux</span>
+                <div class="pulse-chip-row">
+                  <span class="pulse-chip">Appel</span>
+                  <span class="pulse-chip">WhatsApp</span>
+                  <span class="pulse-chip">Retrait</span>
+                </div>
+              </div>
+              <div class="floating-panel card-c">
+                <span class="eyebrow">Service</span>
+                <strong>Demande claire</strong>
+                <p>Le plus direct possible pour les courses du quotidien.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Canaux rapides</div>
+            <h2>Trois moyens simples pour contacter Mokat Shop</h2>
+          </div>
+
+          <div class="channel-grid stagger-children">
+            <article class="channel-card reveal">
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72l.4 2.57a2 2 0 0 1-.57 1.73L7.1 9.86a16 16 0 0 0 7.04 7.04l1.84-1.84a2 2 0 0 1 1.73-.57l2.57.4A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <strong>Appel direct</strong>
+              <p>Pour les horaires, la disponibilite d'un produit ou une demande rapide.</p>
+              <a href="tel:+2250102030405" class="channel-link" data-reward>
+                Appeler Mokat
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+
+            <article class="channel-card reveal">
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 11.5a8.5 8.5 0 1 1-15.86-4.32L3 21l4.02-1.07A8.5 8.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 9.5c.4 2.4 2.1 4.1 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <strong>WhatsApp commande</strong>
+              <p>Le plus pratique pour envoyer une liste de courses ou demander un retrait.</p>
+              <a href="https://wa.me/2250102030405" class="channel-link" data-reward>
+                Ouvrir WhatsApp
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+
+            <article class="channel-card reveal">
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <strong>Retrait en magasin</strong>
+              <p>Choisissez Yopougon Maroc ou Songon Campement Gouro selon votre zone.</p>
+              <a href="magasins.html" class="channel-link" data-reward>
+                Voir les adresses
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt" id="commande">
+        <div class="container">
+          <div class="contact-shell">
+            <div class="form-card reveal-left">
+              <h3>Demande de commande ou d'information</h3>
+              <p>
+                Laissez votre demande, votre liste de courses ou le produit
+                recherché. L'equipe Mokat Shop peut ensuite vous orienter vers
+                le magasin et le retrait le plus pratique.
+              </p>
+              <form class="mock-form">
+                <div class="form-row">
+                  <div>
+                    <label for="nom">Nom complet</label>
+                    <input id="nom" type="text" placeholder="Votre nom" />
+                  </div>
+                  <div>
+                    <label for="telephone">Telephone</label>
+                    <input id="telephone" type="tel" placeholder="+225 ..." />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div>
+                    <label for="magasin">Magasin souhaite</label>
+                    <select id="magasin">
+                      <option>Yopougon Maroc</option>
+                      <option>Songon Campement Gouro</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="type">Type de demande</label>
+                    <select id="type">
+                      <option>Commande</option>
+                      <option>Disponibilite produit</option>
+                      <option>Information</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label for="message">Votre message</label>
+                  <textarea id="message" placeholder="Liste, besoin, quantites, heure de retrait..."></textarea>
+                </div>
+                <div class="page-actions">
+                  <button type="button" class="btn btn-primary" data-reward>
+                    Envoyer la demande
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M22 2 11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="m22 2-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="support-stack">
+              <div class="support-card dark reveal-right">
+                <strong>Commande rapide</strong>
+                <p>Choisir le magasin, envoyer la liste puis recuperer : c'est souvent la solution la plus simple.</p>
+              </div>
+              <div class="support-card reveal-right">
+                <strong>Besoin d'un produit precis ?</strong>
+                <p>Vous pouvez demander la disponibilite avant de vous deplacer.</p>
+                <div class="page-actions">
+                  <a href="rayons.html" class="btn btn-outline" data-reward>Voir les rayons</a>
+                </div>
+              </div>
+              <div class="support-card reveal-right">
+                <strong>Envie d'un bon plan ?</strong>
+                <p>Les promotions de la semaine peuvent vous aider a mieux preparer votre achat.</p>
+                <div class="page-actions">
+                  <a href="promos.html" class="btn btn-outline" data-reward>Voir les promos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Comment commander</div>
+            <h2>Un mode simple pour aller droit a l'essentiel</h2>
+          </div>
+
+          <div class="order-grid stagger-children">
+            <article class="order-card reveal">
+              <strong>1. Choisir son point de retrait</strong>
+              <p>Yopougon Maroc ou Songon Campement Gouro selon la zone la plus pratique.</p>
+            </article>
+            <article class="order-card reveal">
+              <strong>2. Envoyer la demande</strong>
+              <p>Liste simple, besoin précis ou commande plus large via formulaire ou WhatsApp.</p>
+            </article>
+            <article class="order-card reveal">
+              <strong>3. Confirmer et recuperer</strong>
+              <p>Vous savez quoi prendre, quand venir et ou retirer sans perdre de temps.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Questions frequentes</div>
+            <h2>Les reponses utiles avant de commander</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-toggle" aria-expanded="false" data-reward>
+                <span>Peut-on commander pour retirer plus tard ?</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p>Oui. Vous pouvez envoyer votre demande puis convenir du magasin et de l'heure de retrait.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal">
+              <button class="faq-toggle" aria-expanded="false" data-reward>
+                <span>Peut-on verifier un produit avant de se deplacer ?</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p>Oui. Un appel ou un message WhatsApp permet de demander la disponibilite d'un article.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal">
+              <button class="faq-toggle" aria-expanded="false" data-reward>
+                <span>Quel magasin choisir pour le retrait ?</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p>Choisissez entre Yopougon Maroc et Songon Campement Gouro selon la zone la plus proche de vous.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo" data-reward>Mokat<span>Shop</span></a>
+            <p>
+              Mokat Shop reste joignable pour vos commandes, vos demandes de
+              produits et vos retraits en magasin.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v3H7v4h3v5h4v-5h3l1-4h-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 11.5a8.5 8.5 0 1 1-15.86-4.32L3 21l4.02-1.07A8.5 8.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 9.5c.4 2.4 2.1 4.1 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html" data-reward>Accueil</a></li>
+              <li><a href="rayons.html" data-reward>Rayons</a></li>
+              <li><a href="promos.html" data-reward>Promos</a></li>
+              <li><a href="magasins.html" data-reward>Magasins</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#commande" data-reward>Formulaire</a></li>
+              <li><a href="magasins.html" data-reward>Points de vente</a></li>
+              <li><a href="promos.html" data-reward>Voir les promos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Action</h4>
+            <ul>
+              <li><a href="tel:+2250102030405" data-reward>Appeler</a></li>
+              <li><a href="https://wa.me/2250102030405" data-reward>WhatsApp</a></li>
+              <li><a href="rayons.html" data-reward>Voir les rayons</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Contact Mokat Shop.</span>
+          <span>Commande, retrait et informations utiles.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" data-reward>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m6 15 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="site.js"></script>
+  </body>
+</html>

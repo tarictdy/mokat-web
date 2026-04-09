@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Promotions Mokat Shop : offres flash, packs famille et bons plans sur l'epicerie, les boissons, l'hygiene et l'entretien."
+    />
+    <title>Mokat Shop | Promos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="promos.css" />
+  </head>
+  <body class="inner-page">
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-logo">Mokat Shop</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+
+    <div class="announcement-bar">
+      <div class="marquee">
+        <div class="marquee-group">
+          <span>Promos flash Mokat Shop</span>
+          <span>Packs famille et reductions utiles</span>
+          <span>Epicerie, boissons et maison</span>
+          <span>Yopougon Maroc et Songon Campement Gouro</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Promos flash Mokat Shop</span>
+          <span>Packs famille et reductions utiles</span>
+          <span>Epicerie, boissons et maison</span>
+          <span>Yopougon Maroc et Songon Campement Gouro</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-logo" data-reward>Mokat<span>Shop</span></a>
+          <div class="nav-actions">
+            <div class="nav-links">
+              <a href="index.html" data-reward>Accueil</a>
+              <a href="rayons.html" data-reward>Rayons</a>
+              <a href="promos.html" aria-current="page" data-reward>Promos</a>
+              <a href="magasins.html" data-reward>Magasins</a>
+              <a href="contact.html" data-reward>Contact</a>
+            </div>
+            <a href="contact.html#commande" class="nav-cta" data-reward>
+              Commander
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu" data-reward>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-reward>Accueil</a>
+        <a href="rayons.html" data-reward>Rayons</a>
+        <a href="promos.html" aria-current="page" data-reward>Promos</a>
+        <a href="magasins.html" data-reward>Magasins</a>
+        <a href="contact.html" data-reward>Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div class="hero-copy reveal-left">
+              <div class="page-badge">Promotions et bons plans</div>
+              <h1>Les bonnes affaires de la semaine chez <span class="accent">Mokat Shop</span></h1>
+              <p class="page-lead">
+                Retrouvez ici les promotions sur l'epicerie, les boissons,
+                l'hygiene et les produits d'entretien pour mieux gerer le budget
+                de la maison.
+              </p>
+              <div class="page-actions">
+                <a href="#flash" class="btn btn-primary" data-reward>
+                  Voir les offres flash
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="contact.html#commande" class="btn btn-outline" data-reward>Commander une offre</a>
+              </div>
+              <div class="hero-kpis">
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="25" data-suffix="%">0</strong>
+                  <span>jusqu'a de remise</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="4" data-suffix="">0</strong>
+                  <span>univers concernes</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="7" data-suffix="/7">0</strong>
+                  <span>bons plans a suivre</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+              <div class="hero-stage">
+                <img
+                  src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Produits en promotion"
+                  data-fallback="Promos Mokat"
+                  data-tone="orange"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="floating-panel card-a">
+                <span class="eyebrow">Bons plans</span>
+                <strong>Des promotions utiles</strong>
+                <p>Ce qui compte vraiment pour les courses de la maison.</p>
+              </div>
+              <div class="floating-panel card-b">
+                <span class="eyebrow">Semaine</span>
+                <div class="pulse-chip-row">
+                  <span class="pulse-chip">-25%</span>
+                  <span class="pulse-chip">Packs</span>
+                  <span class="pulse-chip">Reserve</span>
+                </div>
+              </div>
+              <div class="floating-panel card-c">
+                <span class="eyebrow">Objectif</span>
+                <strong>Mieux acheter</strong>
+                <p>Faire ses courses utiles au meilleur prix.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell tight" id="flash">
+        <div class="container">
+          <div class="flash-grid stagger-children">
+            <article class="flash-card reveal">
+              <div class="flash-card-inner">
+                <div class="flash-discount">-25%</div>
+                <h3>Pack week-end famille</h3>
+                <p>Boissons, epicerie et produits utiles regroupes pour la reserve du week-end.</p>
+                <div class="flash-meta">
+                  <span>Vendredi a dimanche</span>
+                  <span>Reserve maison</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="flash-card reveal">
+              <div class="flash-card-inner">
+                <div class="flash-discount">-15%</div>
+                <h3>Boissons et gourmandises</h3>
+                <p>Un bon plan sur les boissons et les petits achats plaisir de la famille.</p>
+                <div class="flash-meta">
+                  <span>Rotation reguliere</span>
+                  <span>Boissons</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="flash-card reveal">
+              <div class="flash-card-inner">
+                <div class="flash-discount">2+1</div>
+                <h3>Maison et entretien</h3>
+                <p>Une offre simple pour l'entretien du foyer et les produits de nettoyage.</p>
+                <div class="flash-meta">
+                  <span>Semaine utile</span>
+                  <span>Maison</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt">
+        <div class="container">
+          <div class="offer-strip">
+            <div class="countdown-panel reveal-left">
+              <h3>L'offre du moment a ne pas laisser passer</h3>
+              <p>
+                Le compte a rebours accompagne les bons plans de la semaine et
+                aide a profiter des meilleures reductions avant la fin de l'offre.
+              </p>
+              <div class="promo-timer" aria-label="Compte a rebours">
+                <div class="timer-box">
+                  <span class="number" id="days">00</span>
+                  <span class="label">Jours</span>
+                </div>
+                <div class="timer-box">
+                  <span class="number" id="hours">00</span>
+                  <span class="label">Heures</span>
+                </div>
+                <div class="timer-box">
+                  <span class="number" id="minutes">00</span>
+                  <span class="label">Min</span>
+                </div>
+                <div class="timer-box">
+                  <span class="number" id="seconds">00</span>
+                  <span class="label">Sec</span>
+                </div>
+              </div>
+              <a href="contact.html#commande" class="btn btn-white" data-reward>
+                Commander l'offre
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="offer-grid stagger-children">
+              <article class="offer-card reveal-right">
+                <strong>Promo reserve du soir</strong>
+                <p>Ideal pour completer rapidement l'epicerie apres le travail.</p>
+                <span>Pratique pour le quartier</span>
+              </article>
+              <article class="offer-card reveal-right">
+                <strong>Pack maison du mois</strong>
+                <p>Une proposition utile pour l'entretien, l'hygiene et le menager.</p>
+                <span>Economies sur l'essentiel</span>
+              </article>
+              <article class="offer-card reveal-right">
+                <strong>Offre locale du week-end</strong>
+                <p>Un bon plan relaye selon les besoins de Yopougon et de Songon.</p>
+                <span>Proximite et prix malin</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Planning hebdomadaire</div>
+            <h2>Des bons plans qui suivent le rythme des familles</h2>
+            <p>
+              Tout au long de la semaine, Mokat Shop peut mettre en avant les
+              produits les plus utiles selon les habitudes d'achat.
+            </p>
+          </div>
+
+          <div class="weekly-board stagger-children" id="hebdo">
+            <article class="week-card reveal-scale">
+              <img
+                src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=900&q=80"
+                alt="Lundi epicerie"
+                data-fallback="Lundi Epicerie"
+                data-tone="orange"
+                loading="lazy"
+              />
+              <div class="week-content">
+                <strong>Lundi Epicerie</strong>
+                <p>Faire les reserves du foyer en debut de semaine.</p>
+              </div>
+            </article>
+
+            <article class="week-card reveal-scale">
+              <img
+                src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=900&q=80"
+                alt="Mercredi boissons"
+                data-fallback="Mercredi Boissons"
+                data-tone="dark"
+                loading="lazy"
+              />
+              <div class="week-content">
+                <strong>Mercredi Boissons</strong>
+                <p>Un point fort sur les boissons et les petits achats plaisir.</p>
+              </div>
+            </article>
+
+            <article class="week-card reveal-scale">
+              <img
+                src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752?auto=format&fit=crop&w=900&q=80"
+                alt="Vendredi maison"
+                data-fallback="Vendredi Maison"
+                data-tone="orange"
+                loading="lazy"
+              />
+              <div class="week-content">
+                <strong>Vendredi Maison</strong>
+                <p>Entretien et hygiene avant le week-end en famille.</p>
+              </div>
+            </article>
+
+            <article class="week-card reveal-scale">
+              <img
+                src="https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&w=900&q=80"
+                alt="Dimanche reserve"
+                data-fallback="Dimanche Reserve"
+                data-tone="dark"
+                loading="lazy"
+              />
+              <div class="week-content">
+                <strong>Dimanche Reserve</strong>
+                <p>Completer le placard et preparer la semaine suivante.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Fidelisation</div>
+            <h2>Les clients reviennent pour les prix et les produits utiles</h2>
+          </div>
+
+          <div class="loyalty-grid stagger-children">
+            <article class="loyalty-card reveal">
+              <strong>Bons plans regulaires</strong>
+              <p>Des reductions frequentes sur les produits que les familles achetent vraiment.</p>
+            </article>
+            <article class="loyalty-card reveal">
+              <strong>Offres de quartier</strong>
+              <p>Des promotions qui parlent aux habitudes de Yopougon Maroc et de Songon Campement Gouro.</p>
+            </article>
+            <article class="loyalty-card reveal">
+              <strong>Achats mieux maitrises</strong>
+              <p>Les packs utiles permettent de depenser moins tout en faisant les bonnes reserves.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container">
+          <div class="cta-band-card reveal">
+            <h2>Les promotions vous interessent ? Trouvez le magasin le plus proche.</h2>
+            <p>
+              Retrouvez Mokat Shop a Yopougon Maroc et a Songon Campement Gouro
+              pour profiter des offres de la semaine.
+            </p>
+            <div class="cta-band-actions">
+              <a href="magasins.html" class="btn btn-primary" data-reward>Voir les magasins</a>
+              <a href="contact.html" class="btn btn-outline" data-reward>Contacter Mokat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo" data-reward>Mokat<span>Shop</span></a>
+            <p>
+              Promotions sur l'epicerie, les boissons, l'hygiene et l'entretien
+              pour aider les familles a mieux gerer leurs courses.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v3H7v4h3v5h4v-5h3l1-4h-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 11.5a8.5 8.5 0 1 1-15.86-4.32L3 21l4.02-1.07A8.5 8.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 9.5c.4 2.4 2.1 4.1 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html" data-reward>Accueil</a></li>
+              <li><a href="rayons.html" data-reward>Rayons</a></li>
+              <li><a href="promos.html" data-reward>Promos</a></li>
+              <li><a href="contact.html" data-reward>Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Promos</h4>
+            <ul>
+              <li><a href="#flash" data-reward>Offres flash</a></li>
+              <li><a href="#hebdo" data-reward>Planning hebdo</a></li>
+              <li><a href="contact.html#commande" data-reward>Commander</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Suite</h4>
+            <ul>
+              <li><a href="magasins.html" data-reward>Voir les magasins</a></li>
+              <li><a href="rayons.html" data-reward>Voir les rayons</a></li>
+              <li><a href="contact.html" data-reward>Nous ecrire</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Promos Mokat Shop.</span>
+          <span>Bons plans utiles pour la maison et le quotidien.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" data-reward>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m6 15 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="site.js"></script>
+  </body>
+</html>

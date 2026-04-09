@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Decouvrez les rayons de Mokat Shop : epicerie, boissons, hygiene, entretien et produits utiles a Yopougon Maroc et Songon Campement Gouro."
+    />
+    <title>Mokat Shop | Nos rayons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="rayons.css" />
+  </head>
+  <body class="inner-page">
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-logo">Mokat Shop</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+
+    <div class="announcement-bar">
+      <div class="marquee">
+        <div class="marquee-group">
+          <span>Epicerie, boissons et maison</span>
+          <span>Produits utiles pour le quotidien</span>
+          <span>Disponible a Yopougon Maroc</span>
+          <span>Disponible a Songon Campement Gouro</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Epicerie, boissons et maison</span>
+          <span>Produits utiles pour le quotidien</span>
+          <span>Disponible a Yopougon Maroc</span>
+          <span>Disponible a Songon Campement Gouro</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-logo" data-reward>Mokat<span>Shop</span></a>
+          <div class="nav-actions">
+            <div class="nav-links">
+              <a href="index.html" data-reward>Accueil</a>
+              <a href="rayons.html" aria-current="page" data-reward>Rayons</a>
+              <a href="promos.html" data-reward>Promos</a>
+              <a href="magasins.html" data-reward>Magasins</a>
+              <a href="contact.html" data-reward>Contact</a>
+            </div>
+            <a href="contact.html#commande" class="nav-cta" data-reward>
+              Commander
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu" data-reward>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-reward>Accueil</a>
+        <a href="rayons.html" aria-current="page" data-reward>Rayons</a>
+        <a href="promos.html" data-reward>Promos</a>
+        <a href="magasins.html" data-reward>Magasins</a>
+        <a href="contact.html" data-reward>Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div class="hero-copy reveal-left">
+              <div class="page-badge">Rayons Mokat Shop</div>
+              <h1>Les produits utiles de la maison en <span class="accent">un seul passage</span></h1>
+              <p class="page-lead">
+                Chez Mokat Shop, l'essentiel du quotidien est mis en avant :
+                epicerie, boissons, hygiene, entretien et provisions utiles pour
+                la famille.
+              </p>
+              <div class="page-actions">
+                <a href="#epicerie" class="btn btn-primary" data-reward>
+                  Voir l'epicerie
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="contact.html#commande" class="btn btn-outline" data-reward>Faire une demande</a>
+              </div>
+              <div class="hero-kpis">
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="4" data-suffix="">0</strong>
+                  <span>univers essentiels</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="18" data-suffix="+">0</strong>
+                  <span>familles de produits</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="2" data-suffix="">0</strong>
+                  <span>magasins desservis</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+              <div class="hero-stage">
+                <img
+                  src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=1200&q=80"
+                  alt="Rayons de supermarche"
+                  data-fallback="Rayons Mokat"
+                  data-tone="orange"
+                  fetchpriority="high"
+                />
+              </div>
+
+              <div class="floating-panel card-a">
+                <span class="eyebrow">En rayon</span>
+                <strong>Epicerie, boissons et maison</strong>
+                <p>L'essentiel de la boutique se lit en un coup d'oeil.</p>
+              </div>
+
+              <div class="floating-panel card-b">
+                <span class="eyebrow">Produits</span>
+                <div class="pulse-chip-row">
+                  <span class="pulse-chip">Epicerie</span>
+                  <span class="pulse-chip">Boissons</span>
+                  <span class="pulse-chip">Hygiene</span>
+                </div>
+              </div>
+
+              <div class="floating-panel card-c">
+                <span class="eyebrow">Pratique</span>
+                <strong>Courses bien organisees</strong>
+                <p>De quoi aller vite et acheter juste ce qu'il faut.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell tight">
+        <div class="container">
+          <div class="metric-strip stagger-children">
+            <div class="metric-box reveal">
+              <strong>Epicerie</strong>
+              <span>riz, sauces, pates, conserves et biscuits</span>
+            </div>
+            <div class="metric-box reveal">
+              <strong>Boissons</strong>
+              <span>eau, jus, sodas et boissons du quotidien</span>
+            </div>
+            <div class="metric-box reveal">
+              <strong>Hygiene</strong>
+              <span>savons, soins et produits utiles a la maison</span>
+            </div>
+            <div class="metric-box reveal">
+              <strong>Maison</strong>
+              <span>lessive, entretien et proprete du foyer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="epicerie">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Univers principaux</div>
+            <h2>Les grandes familles de produits du quotidien</h2>
+            <p>
+              Mokat Shop se concentre sur les achats utiles : provisions,
+              boissons, hygiene et entretien de la maison.
+            </p>
+          </div>
+
+          <div class="category-mosaic">
+            <article class="shelf-card reveal-scale">
+              <img
+                src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=1200&q=80"
+                alt="Epicerie et provisions"
+                data-fallback="Epicerie"
+                data-tone="orange"
+                loading="lazy"
+              />
+              <div class="shelf-content">
+                <div class="shelf-tag">Epicerie</div>
+                <h3>Provisions utiles pour tenir la maison</h3>
+                <p>
+                  Riz, pates, sauces, conserves, biscuits et references utiles
+                  pour preparer les repas et garder le placard fourni.
+                </p>
+                <div class="shelf-list">
+                  <span>Riz & pates</span>
+                  <span>Sauces & conserves</span>
+                  <span>Biscuits & reserves</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="mosaic-side">
+              <article class="shelf-card reveal-scale" id="boissons">
+                <img
+                  src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=1200&q=80"
+                  alt="Boissons et gourmandises"
+                  data-fallback="Boissons"
+                  data-tone="dark"
+                  loading="lazy"
+                />
+                <div class="shelf-content">
+                  <div class="shelf-tag">Boissons</div>
+                  <h3>Boissons et gourmandises familiales</h3>
+                  <p>Eau, jus, sodas et petites envies a partager a la maison.</p>
+                </div>
+              </article>
+
+              <article class="shelf-card reveal-scale" id="maison">
+                <img
+                  src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752?auto=format&fit=crop&w=1200&q=80"
+                  alt="Produits d'entretien"
+                  data-fallback="Maison"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+                <div class="shelf-content">
+                  <div class="shelf-tag">Maison & hygiene</div>
+                  <h3>Proprete, hygiene et entretien</h3>
+                  <p>Tout pour garder la maison propre et bien tenue au quotidien.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Selections du moment</div>
+            <h2>Des produits pratiques a mettre en avant chaque semaine</h2>
+            <p>
+              Quelques reperes rapides pour preparer les courses sans oublier
+              l'essentiel de la maison.
+            </p>
+          </div>
+
+          <div class="product-wave stagger-children">
+            <article class="product-card reveal">
+              <div class="product-media">
+                <img
+                  src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=900&q=80"
+                  alt="Pack epicerie"
+                  data-fallback="Pack Epicerie"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+                <div class="product-badge">Top vente</div>
+              </div>
+              <div class="product-info">
+                <h3>Pack epicerie maison</h3>
+                <p>Une base utile pour cuisiner, depanner et faire la reserve.</p>
+                <div class="product-meta">
+                  <span class="product-price">4 900 F</span>
+                  <span>Disponible</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-media">
+                <img
+                  src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=900&q=80"
+                  alt="Pack boissons"
+                  data-fallback="Pack Boissons"
+                  data-tone="dark"
+                  loading="lazy"
+                />
+                <div class="product-badge">Reserve</div>
+              </div>
+              <div class="product-info">
+                <h3>Pack boissons famille</h3>
+                <p>Boissons et provisions regroupées pour gagner du temps.</p>
+                <div class="product-meta">
+                  <span class="product-price">12 500 F</span>
+                  <span>Pratique</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-media">
+                <img
+                  src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752?auto=format&fit=crop&w=900&q=80"
+                  alt="Produits d'entretien"
+                  data-fallback="Maison Propre"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+                <div class="product-badge">Maison</div>
+              </div>
+              <div class="product-info">
+                <h3>Routine maison</h3>
+                <p>Entretien, hygiene et produits menagers reunis dans un meme bloc.</p>
+                <div class="product-meta">
+                  <span class="product-price">6 300 F</span>
+                  <span>Assorti</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-media">
+                <img
+                  src="https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&w=900&q=80"
+                  alt="Produits du quotidien"
+                  data-fallback="Courses Maison"
+                  data-tone="dark"
+                  loading="lazy"
+                />
+                <div class="product-badge">Cuisine</div>
+              </div>
+              <div class="product-info">
+                <h3>Essentiels du placard</h3>
+                <p>Des produits pratiques pour completer les courses de la semaine.</p>
+                <div class="product-meta">
+                  <span class="product-price">8 900 F</span>
+                  <span>En rayon</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="split-banner reveal">
+            <div class="split-banner-content">
+              <h3>Des rayons bien tenus pour faire ses courses en confiance</h3>
+              <p>
+                Chez Mokat Shop, l'important reste le bon produit, le bon prix et
+                la bonne disponibilite au moment d'acheter.
+              </p>
+              <a href="promos.html" class="btn btn-white" data-reward>
+                Voir les promos
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt" id="conseils">
+        <div class="container">
+          <div class="experience-ribbon">
+            <div class="panel-card reveal-left">
+              <div class="section-tag">En pratique</div>
+              <h3>Comment les clients preparent leurs courses chez Mokat Shop</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-step">1</div>
+                  <div class="timeline-copy">
+                    <h4>Commencer par l'essentiel</h4>
+                    <p>Epicerie, boissons ou entretien selon le besoin du moment.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-step">2</div>
+                  <div class="timeline-copy">
+                    <h4>Reperer les bons plans</h4>
+                    <p>Les produits utiles et les offres de la semaine sont mis en avant.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-step">3</div>
+                  <div class="timeline-copy">
+                    <h4>Passer a l'action</h4>
+                    <p>Le client peut ensuite voir les promos, choisir un magasin ou commander.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="visual-stack stagger-children">
+              <article class="stack-card reveal-right">
+                <strong>Des reperes clairs</strong>
+                <p>Les familles retrouvent vite les produits qu'elles achetent le plus souvent.</p>
+              </article>
+              <article class="stack-card reveal-right">
+                <strong>Des courses plus rapides</strong>
+                <p>Tout est pense pour aider a choisir sans perdre de temps.</p>
+              </article>
+              <article class="stack-card reveal-right">
+                <strong>Des produits vraiment utiles</strong>
+                <p>La boutique reste concentree sur ce qui sert a la maison au quotidien.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Questions frequentes</div>
+            <h2>Les infos qui aident a venir ou commander plus facilement</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-toggle" aria-expanded="false" data-reward>
+                <span>Quels produits trouve-t-on le plus souvent chez Mokat Shop ?</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p>Principalement de l'epicerie, des boissons, de l'hygiene, de l'entretien et les essentiels du quotidien.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal">
+              <button class="faq-toggle" aria-expanded="false" data-reward>
+                <span>Les promotions changent-elles souvent ?</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p>Oui. Les bons plans tournent regulierement selon les arrivages et les besoins de la clientele.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal">
+              <button class="faq-toggle" aria-expanded="false" data-reward>
+                <span>Peut-on demander la disponibilite avant de venir ?</span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+              <div class="faq-content">
+                <p>Oui. Contactez Mokat Shop pour demander un produit, preparer une commande ou organiser un retrait avant de vous deplacer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container">
+          <div class="cta-band-card reveal">
+            <h2>Retrouvez les bons plans sur les produits les plus utiles</h2>
+            <p>
+              Mokat Shop propose regulierement des offres sur l'epicerie, les
+              boissons, l'hygiene et l'entretien.
+            </p>
+            <div class="cta-band-actions">
+              <a href="promos.html" class="btn btn-primary" data-reward>Voir les promos</a>
+              <a href="contact.html" class="btn btn-outline" data-reward>Contacter Mokat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo" data-reward>Mokat<span>Shop</span></a>
+            <p>
+              Mokat Shop accompagne les familles avec une epicerie utile, des
+              boissons, de l'hygiene et des produits d'entretien.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v3H7v4h3v5h4v-5h3l1-4h-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 11.5a8.5 8.5 0 1 1-15.86-4.32L3 21l4.02-1.07A8.5 8.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 9.5c.4 2.4 2.1 4.1 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html" data-reward>Accueil</a></li>
+              <li><a href="rayons.html" data-reward>Rayons</a></li>
+              <li><a href="promos.html" data-reward>Promos</a></li>
+              <li><a href="magasins.html" data-reward>Magasins</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Rayons</h4>
+            <ul>
+              <li><a href="#epicerie" data-reward>Epicerie</a></li>
+              <li><a href="#boissons" data-reward>Boissons</a></li>
+              <li><a href="#maison" data-reward>Maison</a></li>
+              <li><a href="#conseils" data-reward>Conseils</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Action</h4>
+            <ul>
+              <li><a href="contact.html#commande" data-reward>Commander</a></li>
+              <li><a href="promos.html" data-reward>Voir les promos</a></li>
+              <li><a href="magasins.html" data-reward>Trouver un magasin</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Rayons Mokat Shop.</span>
+          <span>Epicerie, boissons, hygiene, entretien et produits utiles.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" data-reward>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m6 15 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Magasins Mokat Shop a Yopougon Maroc et Songon Campement Gouro. Horaires, services et points de retrait."
+    />
+    <title>Mokat Shop | Magasins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="magasins.css" />
+  </head>
+  <body class="inner-page">
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-logo">Mokat Shop</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+
+    <div class="announcement-bar">
+      <div class="marquee">
+        <div class="marquee-group">
+          <span>Deux points de vente Mokat Shop</span>
+          <span>Yopougon Maroc</span>
+          <span>Songon Campement Gouro</span>
+          <span>Proximite, service et promos</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Deux points de vente Mokat Shop</span>
+          <span>Yopougon Maroc</span>
+          <span>Songon Campement Gouro</span>
+          <span>Proximite, service et promos</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-logo" data-reward>Mokat<span>Shop</span></a>
+          <div class="nav-actions">
+            <div class="nav-links">
+              <a href="index.html" data-reward>Accueil</a>
+              <a href="rayons.html" data-reward>Rayons</a>
+              <a href="promos.html" data-reward>Promos</a>
+              <a href="magasins.html" aria-current="page" data-reward>Magasins</a>
+              <a href="contact.html" data-reward>Contact</a>
+            </div>
+            <a href="contact.html#commande" class="nav-cta" data-reward>
+              Commander
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu" data-reward>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-reward>Accueil</a>
+        <a href="rayons.html" data-reward>Rayons</a>
+        <a href="promos.html" data-reward>Promos</a>
+        <a href="magasins.html" aria-current="page" data-reward>Magasins</a>
+        <a href="contact.html" data-reward>Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div class="hero-copy reveal-left">
+              <div class="page-badge">Nos magasins</div>
+              <h1>Retrouvez Mokat Shop tout pres de <span class="accent">votre quartier</span></h1>
+              <p class="page-lead">
+                Mokat Shop vous accueille a Yopougon Maroc et a Songon Campement
+                Gouro pour vos courses du quotidien, vos bons plans et vos
+                commandes a retirer.
+              </p>
+              <div class="page-actions">
+                <a href="#yopougon" class="btn btn-primary" data-reward>
+                  Voir les adresses
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="contact.html#commande" class="btn btn-outline" data-reward>Commander et retirer</a>
+              </div>
+              <div class="hero-kpis">
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="2" data-suffix="">0</strong>
+                  <span>points de vente</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="7" data-suffix="/7">0</strong>
+                  <span>ouverture hebdomadaire</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="3" data-suffix="+">0</strong>
+                  <span>services utiles</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+              <div class="hero-stage">
+                <img
+                  src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+                  alt="Facade de magasin"
+                  data-fallback="Magasins Mokat"
+                  data-tone="dark"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="floating-panel card-a">
+                <span class="eyebrow">Quartier</span>
+                <strong>Deux adresses proches</strong>
+                <p>Pour faire ses courses sans s'eloigner de ses habitudes.</p>
+              </div>
+              <div class="floating-panel card-b">
+                <span class="eyebrow">Services</span>
+                <div class="pulse-chip-row">
+                  <span class="pulse-chip">Retrait</span>
+                  <span class="pulse-chip">Promos</span>
+                  <span class="pulse-chip">Accueil</span>
+                </div>
+              </div>
+              <div class="floating-panel card-c">
+                <span class="eyebrow">Infos</span>
+                <strong>Horaires visibles</strong>
+                <p>Des reperes utiles avant de venir en magasin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="yopougon">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Nos adresses</div>
+            <h2>Deux points de vente pour vos courses du quotidien</h2>
+            <p>
+              Choisissez le magasin le plus pratique pour votre quartier et
+              retrouvez les produits essentiels de la maison.
+            </p>
+          </div>
+
+          <div class="store-grid stagger-children">
+            <article class="store-card reveal-left">
+              <div class="store-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mokat Shop Yopougon Maroc"
+                  data-fallback="Yopougon Maroc"
+                  data-tone="dark"
+                  loading="lazy"
+                />
+                <div class="store-label">Yopougon Maroc</div>
+              </div>
+              <div class="store-body">
+                <h3>Yopougon Maroc</h3>
+                <p>
+                  Une adresse pratique pour les courses rapides, les achats utiles
+                  et les bons plans du quartier.
+                </p>
+                <div class="store-points">
+                  <div class="store-point">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Epicerie, boissons, hygiene et entretien a deux pas du quartier.</span>
+                  </div>
+                  <div class="store-point">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <span>Horaires cibles : 7h30 a 21h30.</span>
+                  </div>
+                </div>
+                <div class="location-status open" data-open="7" data-close="22">
+                  <span class="dot"></span>
+                  <span class="status-text">Ouvert maintenant</span>
+                </div>
+                <div class="store-chip-row">
+                  <span class="store-chip">Retrait rapide</span>
+                  <span class="store-chip">Bons plans</span>
+                  <span class="store-chip">Courses utiles</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="store-card reveal-right" id="songon">
+              <div class="store-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mokat Shop Songon Campement Gouro"
+                  data-fallback="Songon Gouro"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+                <div class="store-label">Songon Campement Gouro</div>
+              </div>
+              <div class="store-body">
+                <h3>Songon Campement Gouro</h3>
+                <p>
+                  Un point de vente de proximite pour faire ses reserves, profiter
+                  des promotions et preparer les achats de la maison.
+                </p>
+                <div class="store-points">
+                  <div class="store-point">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 7h16M7 4v6M17 4v6M5 11h14v8H5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Promotions regulieres sur l'epicerie, les boissons et les produits de maison.</span>
+                  </div>
+                  <div class="store-point">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M3 7h18l-2 10H5L3 7Zm0 0-1-3H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Courses utiles, commande possible et retrait pratique selon vos besoins.</span>
+                  </div>
+                </div>
+                <div class="location-status open" data-open="7" data-close="22">
+                  <span class="dot"></span>
+                  <span class="status-text">Ouvert maintenant</span>
+                </div>
+                <div class="store-chip-row">
+                  <span class="store-chip">Promos semaine</span>
+                  <span class="store-chip">Reserve famille</span>
+                  <span class="store-chip">Proximite</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt">
+        <div class="container">
+          <div class="route-grid">
+            <div class="map-panel reveal-left">
+              <div class="section-tag">Ou nous trouver</div>
+              <h3>Reperez d'un coup d'oeil les deux zones Mokat Shop</h3>
+              <p class="page-lead">
+                Yopougon Maroc et Songon Campement Gouro sont les deux points de
+                vente a privilegier selon votre zone et vos habitudes.
+              </p>
+
+              <div class="map-visual">
+                <iframe
+                  class="map-embed"
+                  title="Carte des zones Mokat Shop"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://maps.google.com/maps?q=Abidjan%20Cote%20d%27Ivoire&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
+                <div class="map-pin yop">Yopougon Maroc</div>
+                <div class="map-pin songon">Songon Campement Gouro</div>
+              </div>
+              <div class="map-actions">
+                <a
+                  class="store-chip"
+                  href="https://www.google.com/maps/search/?api=1&query=Yopougon%20Maroc%20Abidjan%20Cote%20d%27Ivoire"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-reward
+                >Ouvrir Yopougon</a>
+                <a
+                  class="store-chip"
+                  href="https://www.google.com/maps/search/?api=1&query=Songon%20Campement%20Gouro%20Cote%20d%27Ivoire"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-reward
+                >Ouvrir Songon</a>
+              </div>
+            </div>
+
+            <div class="panel-card reveal-right">
+              <div class="section-tag">Pourquoi venir</div>
+              <h3>Mokat Shop reste proche de la vie du quartier</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-step">1</div>
+                  <div class="timeline-copy">
+                    <h4>Des produits utiles</h4>
+                    <p>Epicerie, boissons, hygiene et entretien pour les besoins du foyer.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-step">2</div>
+                  <div class="timeline-copy">
+                    <h4>Des horaires clairs</h4>
+                    <p>Le client sait quand passer et peut verifier le magasin le plus proche.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-step">3</div>
+                  <div class="timeline-copy">
+                    <h4>Des promotions a suivre</h4>
+                    <p>Les bons plans du moment peuvent etre reperes puis recuperes en magasin.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Services</div>
+            <h2>Ce que vous retrouvez dans les magasins Mokat Shop</h2>
+          </div>
+
+          <div class="service-grid stagger-children">
+            <article class="service-card reveal">
+              <strong>Retrait et preparation</strong>
+              <p>Un point de contact simple pour preparer une commande avant le passage en magasin.</p>
+            </article>
+            <article class="service-card reveal">
+              <strong>Bons plans du moment</strong>
+              <p>Des offres sur les produits les plus utiles pour le quotidien et la maison.</p>
+            </article>
+            <article class="service-card reveal">
+              <strong>Accueil de proximite</strong>
+              <p>Un supermarche de quartier ou l'on vient pour acheter vite et bien.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Vie locale</div>
+            <h2>Deux adresses, un meme esprit de service</h2>
+          </div>
+
+          <div class="local-grid stagger-children">
+            <article class="local-card reveal">
+              <strong>Yopougon Maroc</strong>
+              <p>Un rythme rapide, pratique et bien adapte aux courses de tous les jours.</p>
+            </article>
+            <article class="local-card reveal">
+              <strong>Songon Campement Gouro</strong>
+              <p>Une adresse de proximite pour les reserves, les bons plans et les achats utiles.</p>
+            </article>
+            <article class="local-card reveal">
+              <strong>Meme esprit Mokat</strong>
+              <p>Des produits utiles, des promos regulieres et un service simple dans les deux magasins.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container">
+          <div class="cta-band-card reveal">
+            <h2>Choisissez votre magasin puis envoyez votre demande.</h2>
+            <p>
+              Contactez Mokat Shop pour demander un produit, preparer une
+              commande ou organiser un retrait avant de vous deplacer.
+            </p>
+            <div class="cta-band-actions">
+              <a href="contact.html" class="btn btn-primary" data-reward>Ouvrir le contact</a>
+              <a href="promos.html" class="btn btn-outline" data-reward>Voir les promos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo" data-reward>Mokat<span>Shop</span></a>
+            <p>
+              Deux magasins de proximite pour faire ses courses utiles a
+              Yopougon Maroc et a Songon Campement Gouro.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v3H7v4h3v5h4v-5h3l1-4h-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 11.5a8.5 8.5 0 1 1-15.86-4.32L3 21l4.02-1.07A8.5 8.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 9.5c.4 2.4 2.1 4.1 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html" data-reward>Accueil</a></li>
+              <li><a href="rayons.html" data-reward>Rayons</a></li>
+              <li><a href="promos.html" data-reward>Promos</a></li>
+              <li><a href="contact.html" data-reward>Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Magasins</h4>
+            <ul>
+              <li><a href="#yopougon" data-reward>Yopougon Maroc</a></li>
+              <li><a href="#songon" data-reward>Songon Gouro</a></li>
+              <li><a href="contact.html#commande" data-reward>Commander</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Suite</h4>
+            <ul>
+              <li><a href="contact.html" data-reward>Nous ecrire</a></li>
+              <li><a href="promos.html" data-reward>Voir les promos</a></li>
+              <li><a href="rayons.html" data-reward>Voir les rayons</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Magasins Mokat Shop.</span>
+          <span>Adresses, horaires, services et points de retrait.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" data-reward>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m6 15 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="site.js"></script>
+  </body>
+</html>
