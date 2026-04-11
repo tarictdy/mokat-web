@@ -66,7 +66,7 @@
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 1120) {
       toggleMenu(false);
     }
   });
@@ -258,6 +258,30 @@
       applyFallback(image);
     }
   });
+
+  const canTilt = !prefersReducedMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (canTilt) {
+    document.querySelectorAll(".tilt-card").forEach((card) => {
+      card.addEventListener("pointermove", (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width;
+        const y = (event.clientY - rect.top) / rect.height;
+        const rotateY = (x - 0.5) * 10;
+        const rotateX = (0.5 - y) * 10;
+        card.style.setProperty("--rx", `${rotateX}deg`);
+        card.style.setProperty("--ry", `${rotateY}deg`);
+        card.style.setProperty("--mx", `${x * 100}%`);
+        card.style.setProperty("--my", `${y * 100}%`);
+        card.classList.add("is-tilting");
+      });
+
+      card.addEventListener("pointerleave", () => {
+        card.style.setProperty("--rx", "0deg");
+        card.style.setProperty("--ry", "0deg");
+        card.classList.remove("is-tilting");
+      });
+    });
+  }
 
   const createParticles = (x, y) => {
     if (prefersReducedMotion) return;

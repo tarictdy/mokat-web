@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blog Mokat Shop : conseils de courses, bons plans, organisation de la maison et actualites des magasins de Yopougon Maroc et Songon Campement Gouro."
+    />
+    <title>Mokat Shop | Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body class="inner-page">
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-logo">Mokat Shop</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+
+    <div class="announcement-bar">
+      <div class="marquee">
+        <div class="marquee-group">
+          <span>Conseils pour mieux faire ses courses</span>
+          <span>Bons plans Mokat Shop</span>
+          <span>Idees pour la maison</span>
+          <span>Actualites des magasins</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Conseils pour mieux faire ses courses</span>
+          <span>Bons plans Mokat Shop</span>
+          <span>Idees pour la maison</span>
+          <span>Actualites des magasins</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html" class="nav-logo" data-reward>Mokat<span>Shop</span></a>
+          <div class="nav-actions">
+            <div class="nav-links">
+              <a href="index.html" data-reward>Accueil</a>
+              <a href="rayons.html" data-reward>Rayons</a>
+              <a href="promos.html" data-reward>Promos</a>
+              <a href="magasins.html" data-reward>Magasins</a>
+              <a href="teams.html" data-reward>Equipe</a>
+              <a href="blog.html" aria-current="page" data-reward>Blog</a>
+              <a href="contact.html" data-reward>Contact</a>
+            </div>
+            <a href="contact.html#commande" class="nav-cta" data-reward>
+              Commander
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu" data-reward>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-reward>Accueil</a>
+        <a href="rayons.html" data-reward>Rayons</a>
+        <a href="promos.html" data-reward>Promos</a>
+        <a href="magasins.html" data-reward>Magasins</a>
+        <a href="teams.html" data-reward>Equipe</a>
+        <a href="blog.html" aria-current="page" data-reward>Blog</a>
+        <a href="contact.html" data-reward>Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-grid">
+            <div class="hero-copy reveal-left">
+              <div class="page-badge">Blog Mokat Shop</div>
+              <h1>Conseils, bons plans et idees pour <span class="accent">mieux acheter</span></h1>
+              <p class="page-lead">
+                Le blog Mokat Shop aide les familles a preparer leurs courses,
+                suivre les promotions et mieux organiser les produits utiles de
+                la maison.
+              </p>
+              <div class="page-actions">
+                <a href="#articles" class="btn btn-primary" data-reward>
+                  Lire les articles
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="promos.html" class="btn btn-outline" data-reward>Voir les promos</a>
+              </div>
+              <div class="hero-kpis">
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="6" data-suffix="">0</strong>
+                  <span>articles utiles</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="3" data-suffix="">0</strong>
+                  <span>themes pratiques</span>
+                </div>
+                <div class="hero-kpi">
+                  <strong class="stat-number" data-target="2" data-suffix="">0</strong>
+                  <span>magasins concernes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+              <div class="hero-stage">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                  alt="Lecture des conseils Mokat Shop"
+                  data-fallback="Blog Mokat"
+                  data-tone="dark"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="floating-panel card-a">
+                <span class="eyebrow">Conseils</span>
+                <strong>Courses mieux preparees</strong>
+                <p>Des astuces simples avant de passer en magasin.</p>
+              </div>
+              <div class="floating-panel card-b">
+                <span class="eyebrow">Themes</span>
+                <div class="pulse-chip-row">
+                  <span class="pulse-chip">Promos</span>
+                  <span class="pulse-chip">Maison</span>
+                  <span class="pulse-chip">Budget</span>
+                </div>
+              </div>
+              <div class="floating-panel card-c">
+                <span class="eyebrow">Mokat</span>
+                <strong>Actu locale</strong>
+                <p>Yopougon Maroc et Songon Campement Gouro.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Article a la une</div>
+            <h2>Le guide pratique pour faire ses courses sans depasser son budget</h2>
+          </div>
+
+          <div class="blog-feature">
+            <article class="featured-post reveal-left">
+              <img
+                src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=1400&q=80"
+                alt="Rayon de produits utiles"
+                data-fallback="Guide courses"
+                data-tone="orange"
+                loading="lazy"
+              />
+              <div class="featured-content">
+                <span class="blog-chip">Guide Mokat</span>
+                <h2>Comment preparer une liste de courses efficace pour la maison</h2>
+                <p>
+                  Une methode simple : commencer par l'epicerie, verifier les
+                  boissons, ajouter l'hygiene, puis terminer par l'entretien.
+                </p>
+                <a href="contact.html#commande" class="btn btn-white" data-reward>Preparer une demande</a>
+              </div>
+            </article>
+
+            <div class="blog-side stagger-children">
+              <article class="side-post tilt-card reveal-right">
+                <span>Budget</span>
+                <h3>Les bons reflexes avant de profiter d'une promotion</h3>
+                <p>Verifier le besoin, comparer les formats et acheter ce qui sert vraiment.</p>
+              </article>
+              <article class="side-post tilt-card reveal-right">
+                <span>Maison</span>
+                <h3>Les produits a garder en reserve chaque semaine</h3>
+                <p>Epicerie, eau, savon, lessive et produits pratiques pour eviter les oublis.</p>
+              </article>
+              <article class="side-post tilt-card reveal-right">
+                <span>Magasins</span>
+                <h3>Yopougon ou Songon : choisir le point de retrait le plus pratique</h3>
+                <p>Un choix simple selon votre zone, votre trajet et votre heure de passage.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt" id="articles">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-tag">Articles recents</div>
+            <h2>Des contenus courts, utiles et orientes client</h2>
+            <p>
+              Retrouvez des idees simples pour mieux acheter, reperer les bons
+              plans et organiser les produits utiles de la maison.
+            </p>
+          </div>
+
+          <div class="blog-filter reveal">
+            <span>Tous</span>
+            <span>Bons plans</span>
+            <span>Courses</span>
+            <span>Maison</span>
+            <span>Magasins</span>
+          </div>
+
+          <div class="blog-grid stagger-children">
+            <article class="post-card tilt-card reveal-scale">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&w=900&q=80"
+                  alt="Produits maison"
+                  data-fallback="Maison"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-body">
+                <div class="post-meta">
+                  <span>Maison</span>
+                  <span>3 min</span>
+                </div>
+                <h3>Les indispensables d'entretien a ne pas oublier</h3>
+                <p>Une petite liste utile pour garder la maison propre sans multiplier les achats.</p>
+                <a href="rayons.html#maison" class="post-link" data-reward>Voir le rayon</a>
+              </div>
+            </article>
+
+            <article class="post-card tilt-card reveal-scale">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=900&q=80"
+                  alt="Epicerie et provisions"
+                  data-fallback="Epicerie"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-body">
+                <div class="post-meta">
+                  <span>Epicerie</span>
+                  <span>4 min</span>
+                </div>
+                <h3>Comment composer une reserve simple pour la semaine</h3>
+                <p>Riz, pates, conserves, sauces et biscuits : commencer par ce qui sert vraiment.</p>
+                <a href="rayons.html#epicerie" class="post-link" data-reward>Voir le rayon</a>
+              </div>
+            </article>
+
+            <article class="post-card tilt-card reveal-scale">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1596803244618-8dbee441d70b?auto=format&fit=crop&w=900&q=80"
+                  alt="Boissons en rayon"
+                  data-fallback="Boissons"
+                  data-tone="dark"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-body">
+                <div class="post-meta">
+                  <span>Boissons</span>
+                  <span>2 min</span>
+                </div>
+                <h3>Prevoir les boissons pour la famille et les visites</h3>
+                <p>Eau, jus et sodas : une organisation simple pour ne pas acheter dans l'urgence.</p>
+                <a href="rayons.html#boissons" class="post-link" data-reward>Voir le rayon</a>
+              </div>
+            </article>
+
+            <article class="post-card tilt-card reveal-scale">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=900&q=80"
+                  alt="Promotion en magasin"
+                  data-fallback="Promos"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-body">
+                <div class="post-meta">
+                  <span>Bons plans</span>
+                  <span>3 min</span>
+                </div>
+                <h3>Profiter d'une promo sans acheter inutilement</h3>
+                <p>La bonne promo est celle qui correspond a un vrai besoin de la maison.</p>
+                <a href="promos.html" class="post-link" data-reward>Voir les promos</a>
+              </div>
+            </article>
+
+            <article class="post-card tilt-card reveal-scale">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?auto=format&fit=crop&w=900&q=80"
+                  alt="Magasin de proximite"
+                  data-fallback="Magasin"
+                  data-tone="dark"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-body">
+                <div class="post-meta">
+                  <span>Magasins</span>
+                  <span>2 min</span>
+                </div>
+                <h3>Pourquoi choisir un supermarche proche de son quartier</h3>
+                <p>Moins de trajet, plus de rapidite et une relation plus simple avec l'equipe.</p>
+                <a href="magasins.html" class="post-link" data-reward>Voir les adresses</a>
+              </div>
+            </article>
+
+            <article class="post-card tilt-card reveal-scale">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+                  alt="Commande client"
+                  data-fallback="Commande"
+                  data-tone="orange"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-body">
+                <div class="post-meta">
+                  <span>Commande</span>
+                  <span>3 min</span>
+                </div>
+                <h3>Envoyer une demande claire avant de passer en magasin</h3>
+                <p>Magasin, produits, quantites, heure de retrait : quatre infos suffisent souvent.</p>
+                <a href="contact.html#commande" class="post-link" data-reward>Faire une demande</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="blog-newsletter reveal">
+            <h2>Recevoir les bons plans et conseils Mokat</h2>
+            <p>
+              Laissez votre email pour suivre les promos, les conseils pratiques
+              et les nouvelles utiles des magasins Mokat Shop.
+            </p>
+            <form class="newsletter-row">
+              <input type="email" placeholder="Votre adresse email" aria-label="Votre adresse email" />
+              <button type="button" class="btn btn-white" data-reward>S'inscrire</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo" data-reward>Mokat<span>Shop</span></a>
+            <p>
+              Le blog Mokat Shop partage des conseils simples pour les courses,
+              les promotions et les produits utiles du quotidien.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v3H7v4h3v5h4v-5h3l1-4h-4V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp" data-reward>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 11.5a8.5 8.5 0 1 1-15.86-4.32L3 21l4.02-1.07A8.5 8.5 0 0 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 9.5c.4 2.4 2.1 4.1 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html" data-reward>Accueil</a></li>
+              <li><a href="rayons.html" data-reward>Rayons</a></li>
+              <li><a href="promos.html" data-reward>Promos</a></li>
+              <li><a href="magasins.html" data-reward>Magasins</a></li>
+              <li><a href="teams.html" data-reward>Equipe</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Blog</h4>
+            <ul>
+              <li><a href="#articles" data-reward>Articles</a></li>
+              <li><a href="promos.html" data-reward>Bons plans</a></li>
+              <li><a href="contact.html#commande" data-reward>Commander</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Magasins</h4>
+            <ul>
+              <li><a href="magasins.html#yopougon" data-reward>Yopougon Maroc</a></li>
+              <li><a href="magasins.html#songon" data-reward>Songon Campement Gouro</a></li>
+              <li><a href="contact.html" data-reward>Nous ecrire</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Blog Mokat Shop.</span>
+          <span>Conseils, bons plans et actualites de proximite.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut" data-reward>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m6 15 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="site.js"></script>
+  </body>
+</html>
